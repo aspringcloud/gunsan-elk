@@ -50,4 +50,8 @@ cd elasticsearch/
 ls
 vi docker-compose.yml
 exit
-~
+
+## new
+```bash
+docker run -d --restart=always -e PASSWORD=1234 -p 0.0.0.0:8089:8080 -v ${HOME}/.local/share/code-server:/home/ubuntu/.local/share/code-server -v $(pwd):/home/ubuntu -u "$(id -u):$(id -g)" codercom/code-server:latest
+```
