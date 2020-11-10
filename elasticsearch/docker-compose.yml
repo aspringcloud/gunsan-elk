@@ -18,7 +18,7 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - data01:/usr/share/elasticsearch/data
+      - data01:/data0
     ports:
       - 9200:9200
     networks:
@@ -39,7 +39,7 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - data02:/usr/share/elasticsearch/data
+      - data02:/data0
     ports:
       - 9201:9201
     networks:
@@ -60,7 +60,7 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - data03:/usr/share/elasticsearch/data
+      - data03:/data0
     ports:
       - 9202:9202
     networks:
